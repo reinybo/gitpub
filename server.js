@@ -1,5 +1,5 @@
 const express = require('express');
-
+const drinks = require("./models/drinks.js")
 const app = express();
 
 const port = 3000;
@@ -7,6 +7,11 @@ const port = 3000;
 app.get("/", function(req, res){
     res.send('Welcome to the Gitpub App!')
 })
+
+app.get("/drinks", function(req, res){
+    res.send(drinks);
+})
+
 
 
 
