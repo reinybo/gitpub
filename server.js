@@ -9,7 +9,7 @@ app.get("/", function(req, res){
 })
 
 app.get("/drinks", function(req, res){
-    res.send(drinks);
+    res.render("drinks_index.ejs");
 })
 
 
