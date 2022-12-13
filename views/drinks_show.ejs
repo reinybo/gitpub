@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <metsa name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>At foo bar</h1>
+        <% let capDrink = drink.name[0].toUpperCase() + drink.name.slice(1)%>
+        <h2><%= capDrink %></h2>
+        <img src= <%= drink.image+".jpg" %> alt="image of drink">
+        <h3> <%= drink.price %> </h3>
+        <a href="/drinks">Back</a>
+
+    </body>
+</html>
+
+<style>
+    body {
+        color: aqua;
+        background-color: pink;
+    }
+</style>

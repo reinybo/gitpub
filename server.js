@@ -14,7 +14,11 @@ app.get("/drinks", function(req, res){
     });
 })
 
-
+app.get("/drinks/:id", function(req, res){
+    res.render("drinks_show.ejs", {
+        drink: drinks[req.params.id],
+    });
+})
 
 
 app.listen(3000, function(){

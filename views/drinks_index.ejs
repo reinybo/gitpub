@@ -12,7 +12,7 @@
             <% for(let i=0; i < allDrinks.length; i++) { %>
                 <% let capDrink = allDrinks[i].name[0].toUpperCase() %> 
                 <li>
-                    <%= capDrink + allDrinks[i].name.slice(1)%> 
+                    <a href="/drinks/<%=i%>"><%= capDrink + allDrinks[i].name.slice(1)%></a>
                 </li> 
             <% } %> 
         </ul>
