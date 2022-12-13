@@ -7,24 +7,23 @@
         <title>Document</title>
     </head>
     <body>
-        <h1>Welcome to gitPub</h1>
+        <h1>Foods</h1>
         <ul>
-            <% for(let i=0; i < allDrinks.length; i++) { %>
-                <% let capDrink = allDrinks[i].name[0].toUpperCase() %> 
+            <% for(let i=0; i < allFoods.length; i++) { %>
+                <% let capFood = allFoods[i].name[0].toUpperCase() %> 
                 <li>
-                    <a href="/drinks/<%=i%>"><%= capDrink + allDrinks[i].name.slice(1)%></a>
+                    <a href="/foods/<%=i%>"><%= capFood + allFoods[i].name.slice(1)%></a>
                 </li> 
             <% } %> 
-            <br>
-            <h3><a href="/foods">See foods</a></h3>
-
         </ul>
+        <h3><a href="/drinks">See drinks</a></h3>
+
     </body>
 </html>
 
 <style>
     body {
-        color: pink;
-        background-color: aqua;
+        color: aqua;
+        background-color: pink;
     }
 </style>

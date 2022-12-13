@@ -8,11 +8,12 @@
     </head>
     <body>
         <h1>At foo bar</h1>
-        <% let capDrink = drink.name[0].toUpperCase() + drink.name.slice(1)%>
-        <h2><%= capDrink %></h2>
-        <img src= <%= drink.image+".jpg" %> alt="image of drink">
-        <h3> <%= drink.price %> </h3>
+        <% let capFood = food.name[0].toUpperCase() + food.name.slice(1)%>
+        <h2><%= capFood %></h2>
+        <img src= <%= food.image+".jpg" %> alt="image of drink">
+        <h3> <%= food.price %> </h3>
         <a href="/drinks">Back to drinks</a>
+        <a href="/foods">Back to foods</a>        
 
     </body>
 </html>
